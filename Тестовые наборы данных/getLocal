@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Аниме магазин</title>
+    <link rel="stylesheet" href="/public/CSS/style.css">
+</head>
+<body>
+<header class="header-auth">
+    <div class="header-container-auth">
+        <a class="main-link" href="/"><img class="main" src="/public/img/main.png" alt="Logo"></a>
+        
+            <nav class="header-nav">
+                <ul class="topmenu">
+                    <li><a href="\authors" class="submenu-link">Режиссёры</a>
+                        <ul class="submenu">
+                            <li>
+                                
+                            </li>
+                        </ul>
+                            <li><a href="\auth\login">Войти</a></li>
+                            <li><a href="\auth\reg">Зарегистрироваться</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        
+        
+    </div>
+</header><div class="login-container">
+    <form class="login-form" action="/auth/login" method="post">
+        <h1 style="text-align: center; margin-top: 0;">Авторизация</h1>
+        <div class="form-content">
+            <div class="label-top">
+                <label for="exampleInputEmail1" class="form-label">Логин: </label>
+                <input type="text" name="user_name" class="form-input" placeholder="Введите логин" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="label-bottom">
+                <label for="exampleInputPassword1" class="form-label">Пароль: </label>
+                <input type="password" name="password" class="form-input" placeholder="Введите пароль" id="exampleInputPassword1">
+            </div>
+            
+        </div>
+        <button type="submit" class="btn-form">Вход</button>
+    </form>
+</div>
